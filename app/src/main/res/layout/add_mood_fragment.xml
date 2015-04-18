@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <TextView
+        android:id="@+id/add_mood_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Add a new mood!"
+        android:textSize="16sp"
+        android:textColor="#fff"/>
+    <EditText
+        android:id="@+id/add_mood_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_mood_title"
+        android:textColor="#fff"
+        android:maxLength="15"
+        android:hint="Mood Name"/>
+    <TextView
+        android:id="@+id/add_mood_colour_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_mood_name"
+        android:gravity="center_horizontal"
+        android:text="Select a color"
+        android:textColor="#fff"/>
+    <GridView
+        android:id="@+id/add_mood_colour_select"
+        android:layout_width="match_parent"
+        android:numColumns="3"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        android:stretchMode="columnWidth"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/add_mood_colour_title"
+        android:layout_above="@+id/heaviness_seekbar_text"/>
+    <TextView
+        android:id="@+id/heaviness_seekbar_text"
+        android:text="Heaviness"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/heaviness_seekbar"/>
+
+    <SeekBar
+        android:id="@+id/heaviness_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tempo_seekbar_text"
+        android:padding="16dp"
+        android:indeterminate="false"
+        android:progress="5"
+        android:max="10"
+        android:thumb="@android:drawable/divider_horizontal_bright"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progressbar" />
+
+    <TextView
+        android:id="@+id/tempo_seekbar_text"
+        android:text="Tempo"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tempo_seekbar"/>
+
+    <SeekBar
+        android:id="@+id/tempo_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/complexity_seekbar_text"
+        android:padding="16dp"
+        android:indeterminate="false"
+        android:progress="5"
+        android:max="10"
+        android:thumb="@android:drawable/divider_horizontal_bright"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progressbar" />
+
+    <TextView
+        android:id="@+id/complexity_seekbar_text"
+        android:text="Complexity"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/complexity_seekbar"/>
+    <SeekBar
+        android:id="@+id/complexity_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_mood_submit_button"
+        android:padding="16dp"
+        android:indeterminate="false"
+        android:progress="5"
+        android:max="10"
+        android:thumb="@android:drawable/divider_horizontal_bright"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progressbar" />
+    <Button
+        android:id="@+id/add_mood_submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:background="#313131"
+        android:text="Create"/>
+</RelativeLayout>

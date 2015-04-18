@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BarGraphView">
+        <attr name="label_text" format="string"/>
+        <attr name="bar_value" format="float"/>
+        <attr name="bar_color" format="color"/>
+        <attr name="text_color" format="color"/>
+        <attr name="text_array" format="reference"/>
+    </declare-styleable>
+</resources>

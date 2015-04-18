@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:gravity="center"
+    android:background="#ff000000">
+
+    <TextView
+        android:text="Heaviness"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <SeekBar
+        android:id="@+id/heaviness_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:indeterminate="false"
+        android:progress="5"
+        android:max="10"
+        android:thumb="@android:drawable/divider_horizontal_bright"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progressbar" />
+
+    <TextView
+        android:text="Tempo"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <SeekBar
+        android:id="@+id/tempo_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:indeterminate="false"
+        android:progress="5"
+        android:max="10"
+        android:thumb="@android:drawable/divider_horizontal_bright"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progressbar" />
+
+    <TextView
+        android:text="Complexity"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <SeekBar
+        android:id="@+id/complexity_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:indeterminate="false"
+        android:progress="5"
+        android:max="10"
+        android:thumb="@android:drawable/divider_horizontal_bright"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progressbar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="Done"
+        android:id="@+id/submitprefbutton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#ff4a4a4a"
+        android:textColor="#ffffffff"
+        android:textSize="40dp"
+        android:layout_marginTop="30dp" />
+
+</LinearLayout>

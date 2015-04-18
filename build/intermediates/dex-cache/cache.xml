@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\Michael\Documents\GitHub\FYDP\MoodEngineUI\app\build\intermediates\pre-dexed\debug\json-simple-1.1.1-23e076a061fb9b2fd0af92c0915b029188ce1be9.jar"
+        jar="C:\Users\Michael\Documents\GitHub\FYDP\MoodEngineUI\libs\json-simple-1.1.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="5d6f9b6a9ddca2a28c0216cc44efb2e20d9c23b5"/>
+    <item
+        dex="C:\Users\Michael\Documents\GitHub\FYDP\MoodEngineUI\app\build\intermediates\pre-dexed\debug\jEN-cecd918dd9831260a0f7e94160cde7324c7d5a28.jar"
+        jar="C:\Users\Michael\Documents\GitHub\FYDP\MoodEngineUI\libs\jEN.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="2b63c21126167fc877a9d4c53a1581bfa49b60f3"/>
+    <item
+        dex="C:\Users\Michael\Documents\GitHub\FYDP\MoodEngineUI\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-d1e124dbeb02d2c88651cea93a52a6e4440180da.jar"
+        jar="C:\Users\Michael\Desktop\adt-bundle-windows-x86_64-20140321\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
+
+</pre-dex-items>
