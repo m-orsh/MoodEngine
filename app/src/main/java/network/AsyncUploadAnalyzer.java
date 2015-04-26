@@ -57,7 +57,7 @@ public class AsyncUploadAnalyzer extends AsyncTask<String, String, Boolean> {
                     List<Song> songlist2 = new ArrayList<Song>();
                     Song song = EchonestUpload(file, filePath, songlist.get(0));
                     songlist2.add(song);
-                    SendAnalyzedLibraryMetadata sendUploadAnalyzedSongtoExternalDB = new SendAnalyzedLibraryMetadata(songlist2,1,false);
+                    //SendAnalyzedLibraryMetadata sendUploadAnalyzedSongtoExternalDB = new SendAnalyzedLibraryMetadata(songlist2,1,false);
                 }
                 catch(EchoNestException e){
                     System.out.println(e);

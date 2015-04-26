@@ -63,10 +63,10 @@ public class EchoNestData extends AsyncTask<String, String, Boolean> {
             System.out.println(e);
         }
         if(isConnectedMobile||isConnectedLocal&&songCursor!=null) {
-            SendAnalyzedLibraryMetadata sendEchoDatatoExternalDB = new SendAnalyzedLibraryMetadata(MainActivity.dbhandler.getAllSongsOfAnalysisType(1), 1, false);
+            //SendAnalyzedLibraryMetadata sendEchoDatatoExternalDB = new SendAnalyzedLibraryMetadata(MainActivity.dbhandler.getAllSongsOfAnalysisType(1), 1, false);
         }
         else if(isConnectedMobile||isConnectedLocal&&songList!=null&&IDList.size()!=0){
-            SendAnalyzedLibraryMetadata sendEchoDatatoExternalDB = new SendAnalyzedLibraryMetadata(MainActivity.dbhandler.getSongsFromIDList(IDList), 1, false);
+            //SendAnalyzedLibraryMetadata sendEchoDatatoExternalDB = new SendAnalyzedLibraryMetadata(MainActivity.dbhandler.getSongsFromIDList(IDList), 1, false);
         }
         if(isConnectedLocal) {
             AsyncUploadAnalyzer uploadSongs = new AsyncUploadAnalyzer(contentResolver);

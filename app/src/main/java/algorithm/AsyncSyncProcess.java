@@ -67,7 +67,7 @@ public class AsyncSyncProcess extends AsyncTask<String, String, Boolean> {
             System.out.println("run");
             List<Song> songList = MainActivity.dbhandler.getAllSongsOfAnalysisType(0);
             if(songList.size()!=0) {
-                SendLibraryMetadata sender = new SendLibraryMetadata(songList, 0);
+                //SendLibraryMetadata sender = new SendLibraryMetadata(songList, 0);
                 EchoNestData sendEchonest = new EchoNestData(songList, contentResolver, mobileConnection, localConnection);
                 if (Build.VERSION.SDK_INT >= 11) {
                     //--post GB use serial executor by default --

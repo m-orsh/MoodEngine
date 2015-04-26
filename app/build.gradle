@@ -33,6 +33,6 @@ android {
 dependencies {
     compile 'com.android.support:support-v4:20.+'
     compile 'com.android.support:appcompat-v7:20.+'
-    compile files('C:/Users/Michael/Documents/GitHub/FYDP/MoodEngineUI/libs/jEN.jar')
-    compile files('C:/Users/Michael/Documents/GitHub/FYDP/MoodEngineUI/libs/json-simple-1.1.1.jar')
+    compile files('C:/Users/Michael/Documents/GitHub/MoodEngine/libs/jEN.jar')
+    compile files('C:/Users/Michael/Documents/GitHub/MoodEngine/libs/json-simple-1.1.1.jar')
 }

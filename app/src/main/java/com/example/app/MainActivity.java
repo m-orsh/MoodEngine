@@ -271,7 +271,7 @@ public class MainActivity extends ActionBarActivity {
                 switchToFragment(new MoodSelectFragment(false));
                 break;
             case 1:
-                switchToFragment(new MoodSelectFragment(true));
+                //switchToFragment(new MoodSelectFragment(true));
                 break;
             case 2:
                 switchToFragment(new AddMoodFragment());

@@ -56,7 +56,7 @@ public class LocalPlayerService extends MediaPlayerService {
         MainActivity.dbhandler.updateSong(song);
         MainActivity.dbhandler.updateMood(moodElement);
 
-        ConnectivityManager cm = (ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
+        /*ConnectivityManager cm = (ConnectivityManager) getApplicationContext().getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo ni = cm.getActiveNetworkInfo();
         if(ni!=null) {
             if (ni.isConnected()) {
@@ -68,7 +68,7 @@ public class LocalPlayerService extends MediaPlayerService {
                     sendAssessmenttoExternDB.execute();
                 }
             }
-        }
+        }*/
 
         System.out.println(USER_PREF);
         System.out.println(moodElement.heaviness());

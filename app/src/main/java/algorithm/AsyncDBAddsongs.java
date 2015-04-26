@@ -37,7 +37,7 @@ public class AsyncDBAddsongs extends AsyncTask<String, String, Boolean> {
         MainActivity.dbhandler.addInitialSongs(mCursor);
 
         if(isLocalConnected||isMobileConnected) {
-            SendLibraryMetadata sender = new SendLibraryMetadata(mCursor, 0);
+            //SendLibraryMetadata sender = new SendLibraryMetadata(mCursor, 0);
 
             System.out.println("Starting Echonest querying");
             EchoNestData getter = new EchoNestData(mCursor, contentResolver, isMobileConnected, isLocalConnected);
